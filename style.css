@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(/radioFemale.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: #202124;
+    display: flex;
+}
+.menu{
+    flex: 1;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.nav-links li:nth-child(4) {
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    color: white;
+    font: bold 24px fantasy;
+  }
