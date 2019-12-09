@@ -11,14 +11,22 @@
 <body>
     <header>
         <nav class="menu">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            
+            <ul id="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
             <ul class="nav-links" role="navigation">
-              <li><a href="#">Home</a></li>
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-              <li class="twitter__bird"><i class="fa fa-music" style="font-size:20px"></i>RadioApp</li>
+              <li class="brand-name"><i class="fa fa-music" style="font-size:20px"></i>RadioApp</li>
             </ul>
         </nav>
     </header>
-    
+    <script src="/app.js"></script>
 </body> 
 </html>
