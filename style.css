@@ -46,7 +46,6 @@ a{
 
   /* HAMBUGER MENU */
   #menu{
-      /* background-color: rgb(0, 0, 0); */
       width: 35px;
       height: 30px;
       margin: 20px 0 0px 20px;
@@ -83,21 +82,37 @@ a{
   }
 
   /* HAMBURGER NAVIGATION STILL IN PROGRESS */
-  #links{
-      padding: 0;
-      margin: 0 20px;
-      transition: 0.3s ease;
-      display: none;
-  }
-  #links li a{
-      color: var(--yt);
-      text-decoration: none;
-      text-transform: uppercase;
-  }
-  #links li{
-      list-style: none;
-      padding: 16px 0;
-  }
-  .change{
-      display: inline-block;
-  }
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav li a:hover{
+    font-weight: bold;
+}
+.nav li{
+    list-style: none;
+    padding: 16px 0;
+}
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+.change{
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVIGATION BACKGROUND EFFECT */
+.menu-bg{
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.3 ease;
+}
+.change-bg{
+    width: 650px;
+    height: 600px;
+
+}
