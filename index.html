@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <div id="menu" onclick="onClickMenu()">
+        <nav class="menu" id="menu-bar1">
+            <div id="menu" class="menu-bar1" onclick="onClickMenu()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
                 <div id="bar3" class="bar"></div>
@@ -21,14 +21,15 @@
             </ul>
         </nav>
     </header>
-    <div>
-            <ul id="nav" class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-    </div>
     <div class="menu-bg" id="menu-bg"></div>
+    <div>
+            <ul id="nav" class="nav menu-bar1">
+                <li><a href="#">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+    </div>
+
     <script src="/app.js"></script>
 </body> 
 </html>

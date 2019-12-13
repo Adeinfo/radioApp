@@ -17,12 +17,13 @@ body{
     background-repeat: no-repeat;
 }
 
+/* ADDING FLEX TO THE HEADER ADDS NO EFFECT TO THE STYLING
 header{
     display: flex;
-}
+} */
 .menu{
     background-color: var(--black-color);
-    flex: 1;
+    /* flex: 1; */
     display: flex;
 }
 .nav-links{
@@ -95,7 +96,7 @@ a{
 }
 .nav{
     padding: 0;
-    margin: 0 20px;
+    margin: 50px auto auto 20px;
     transition: 0.3s ease;
     display: none;
 }
@@ -106,13 +107,23 @@ a{
 
 /* NAVIGATION BACKGROUND EFFECT */
 .menu-bg{
+    z-index: 1;
     width: 0;
     height: 0;
     background: rgba(0, 0, 0, 0.9);
-    transition: 0.3 ease;
+    transition: 0.3s ease;
 }
 .change-bg{
     width: 650px;
     height: 600px;
-
+    min-height: 100vh;
+}
+.menu-bg, .menu-bar1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-bar1{
+    z-index: 2;
+    /* margin: 12% 0 0 5%; */
 }
