@@ -166,3 +166,8 @@ section div img{
     border-radius: 15px;
     height: 120px;
 }
+
+/* THIS SECTION IS FOR THE RADIO PLAYER / MUSIC PLAYER */
+.app-player{
+    background-color: blanchedalmond;
+}

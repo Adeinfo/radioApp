@@ -1,4 +1,5 @@
 // The code might not be functional enough but it works
+console.clear();
 const date = new Date ('December 4, 2019');
 
 
