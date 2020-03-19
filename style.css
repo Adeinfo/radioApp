@@ -12,10 +12,16 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: url(/radioFemale.jpg);
+    background-image:  linear-gradient(rgba(27, 21, 21, 0.45), rgba(27, 21, 21, 0.45)), 
+                        url(/radioFemale.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
+/* DEFAULT STYLE FOR ALL SECTION */
+/* section{
+    margin: 20px 0;
+} */
 
 /* ADDING FLEX TO THE HEADER ADDS NO EFFECT TO THE STYLING
 header{
@@ -147,6 +153,7 @@ a{
 .radio-stations{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .radio{
     background-color: blanchedalmond;
@@ -168,6 +175,89 @@ section div img{
 }
 
 /* THIS SECTION IS FOR THE RADIO PLAYER / MUSIC PLAYER */
-.app-player{
-    background-color: blanchedalmond;
+
+/* NEW PLAYER CONTROLS */
+.container-section{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.child-of-conatiner-item{
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 590px;
+    height: 120px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+    padding: 8px;
+    flex-wrap: nowrap;
+}
+#radio-image{
+    background-image: url("https://cdn.webrad.io/images/logos/radio-org-ng/max.png");
+    background-size: auto;
+    width: 70px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto 4px;
+}
+#previous-button{
+    background-image: url(./icons/previous_icon.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto 4px;
+    cursor: pointer;
+}
+#play-button{
+    background-image: url(./icons/play_icon.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto 4px;
+    cursor: pointer;
+}
+#pause-button{
+    background-image: url(./icons/pause_icon.png);
+}
+#next-button{
+    background-image: url(./icons/next_icon.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto 4px;
+    cursor: pointer;
+}
+#volume-icon{
+    background-image: url(./icons/volume_icon.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto 4px;
+    cursor: pointer;
+}
+
+/* FOOTER  */
+footer{
+    position: sticky;
+    top: 5000px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color : #060607;
+    color: #fff;
+}
+.footer-link{
+    text-decoration: none;
+    color: blue;
 }

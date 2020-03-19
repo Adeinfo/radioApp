@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> -->
     <title>Radio App</title>
 </head>
 <body>
@@ -30,45 +30,43 @@
             </ul>
     </div>
 
-    <section class="app-player">
-        <div>
-            <a href="#"><i class="fa fa-step-backward" aria-hidden="true"></i>
-            </a>
-            <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i>
-            </a>
-            <a href="#"><i class="fa fa-step-forward" aria-hidden="true"></i>
-            </a>
+    <!-- NEW FLEX WORK  -->
+    <section class="container-section">
+        <div class="child-of-conatiner-item">
+            <div id="radio-image"></div>
+            <div id="previous-button" title="previous"></div>
+            <div id="play-button" onclick="changePlayButton()" title="play"></div>
+            <div id="next-button" title="next"></div>
+            <div id="volume-icon" title="volume"></div>
+            <input type="range" id="volume" min="0" step="0.1" max="1" title="volume" >
         </div>
-        <div>
-            <i class="fa fa-volume-up" aria-hidden="true"></i>
-            <input type="range" step="0.1" id="volume">
-        </div>
-
     </section>
-
     <section id="radio-section" class="radio-stations">
         <div class="radio">
-            <a href="http://"><img src="https://cdn.webrad.io/images/logos/radio-org-ng/max.png" alt="MAX- 102.3FM"></a>
+            <a href="#"><img onclick="radioElement(this)" id="maxfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/max.png" alt="MAX- 102.3FM"></a>
         </div>
         <div class="radio">
-            <a href="http://"><img src="https://cdn.webrad.io/images/logos/radio-org-ng/beat.png" alt="THE BEAT - 99.9FM"></a>
+            <a href="#"><img  onclick="radioElement(this)" id="beatfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/beat.png" alt="THE BEAT - 99.9FM"></a>
         </div>
         <div class="radio">
-            <a href="http://"><img src="https://cdn.webrad.io/images/logos/radio-org-ng/naija.png" alt="NAIJA - 102.7FM"></a>
+            <a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/naija.png" alt="NAIJA - 102.7FM"></a>
         </div>
-        <div class="radio"><a href="http://"><img src="https://cdn.webrad.io/images/logos/radio-org-ng/inspiration.png" alt="INSPIRATION- 92.3FM"></a></div>
+        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/inspiration.png" alt="INSPIRATION- 92.3FM"></a></div>
     </section>
     <section class="radio-stations">
-        <div class="radio"><a href="http://"><img src="https://cdn.webrad.io/images/logos/radio-org-ng/smooth.png" alt="SMOOTH- 98.1FM"></a></div>
-        <div class="radio"><a href="http://"><img src="https://cdn.webrad.io/images/logos/radio-org-ng/rhythm.png" alt="RHYTHM- 93.7FM"></a></div>
-        <div class="radio"><a href="http://"><img src="https://cdn.webrad.io/images/logos/radio-org-ng/gospel.png" alt="CONTEMPRARY GOSPEL- 92.3FM"></a></div>
-        <div class="radio"><a href="http://"><img src="https://cdn.webrad.io/images/logos/radio-org-ng/classic-fm-97-3.png" alt="CLASSIC - 97.3FM"></a></div>
+        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/smooth.png" alt="SMOOTH- 98.1FM"></a></div>
+        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/rhythm.png" alt="RHYTHM- 93.7FM"></a></div>
+        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/gospel.png" alt="CONTEMPRARY GOSPEL- 92.3FM"></a></div>
+        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/classic-fm-97-3.png" alt="CLASSIC - 97.3FM"></a></div>
     </section>
 
+    <footer>
+        <div class="wrapper">
+            <p>Developed by <a class="footer-link" href="http://">Adeinfo</a></p>
+            <span>Copyright &copy; 2020</span>
+        </div>
+    </footer>
+
     <script src="/app.js"></script>
-    <script>
-    console.clear();
-    console.log(error);
-    </script>
 </body> 
 </html>
