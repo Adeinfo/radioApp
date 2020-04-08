@@ -16,6 +16,11 @@ let radioPlayerImage = document.getElementById('radio-image'),
 var song = new Audio();
 var forEach = Array.prototype.forEach;
 let currentSong = 0;
+function onClickMenu(){
+    document.getElementById('menu').classList.toggle('change');
+    document.getElementById('nav').classList.toggle('change');
+    document.getElementById('menu-bg').classList.toggle('change-bg');
+}
 
 
 window.onload = loadSong;
