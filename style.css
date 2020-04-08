@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image:  linear-gradient(rgba(27, 21, 21, 0.45), rgba(27, 21, 21, 0.45)), 
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.938), rgba(3, 3, 3, 0.055)), 
                         url(/radioFemale.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -225,6 +225,13 @@ section div img{
 }
 #pause-button{
     background-image: url(./icons/pause_icon.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto 4px;
+    cursor: pointer;
 }
 #next-button{
     background-image: url(./icons/next_icon.png);

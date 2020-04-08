@@ -34,30 +34,30 @@
     <section class="container-section">
         <div class="child-of-conatiner-item">
             <div id="radio-image"></div>
-            <div id="previous-button" title="previous"></div>
-            <div id="play-button" onclick="changePlayButton()" title="play"></div>
-            <div id="next-button" title="next"></div>
+            <div id="previous-button" onclick="prev(this)" title="previous"></div>
+            <div id="pause-button" onclick="playOrPauseSong(this)" title="play"></div>
+            <div id="next-button" onclick="next(this)" title="next"></div>
             <div id="volume-icon" title="volume"></div>
-            <input type="range" id="volume" min="0" step="0.1" max="1" title="volume" >
+            <input type="range" id="volume" min="0" step="0.1" max="1" title="volume" onchange="adjustVolume()">
         </div>
     </section>
     <section id="radio-section" class="radio-stations">
         <div class="radio">
-            <a href="#"><img onclick="radioElement(this)" id="maxfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/max.png" alt="MAX- 102.3FM"></a>
+            <a href="#"><img onclick="radioElement(this)" title="0" id="maxfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/max.png" alt="MAX- 102.3FM"></a>
         </div>
         <div class="radio">
-            <a href="#"><img  onclick="radioElement(this)" id="beatfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/beat.png" alt="THE BEAT - 99.9FM"></a>
+            <a href="#"><img onclick="radioElement(this)" title="1" id="beatfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/beat.png" alt="THE BEAT - 99.9FM"></a>
         </div>
         <div class="radio">
-            <a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/naija.png" alt="NAIJA - 102.7FM"></a>
+            <a href="#"><img onclick="radioElement(this)" title="2" id="nijafm" src="https://cdn.webrad.io/images/logos/radio-org-ng/naija.png" alt="NAIJA - 102.7FM"></a>
         </div>
-        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/inspiration.png" alt="INSPIRATION- 92.3FM"></a></div>
+        <div class="radio"><a href="#"><img onclick="radioElement(this)" title="3" id="inspirationfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/inspiration.png" alt="INSPIRATION- 92.3FM"></a></div>
     </section>
     <section class="radio-stations">
-        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/smooth.png" alt="SMOOTH- 98.1FM"></a></div>
-        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/rhythm.png" alt="RHYTHM- 93.7FM"></a></div>
-        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/gospel.png" alt="CONTEMPRARY GOSPEL- 92.3FM"></a></div>
-        <div class="radio"><a href="#"><img onclick="radioElement(this)" src="https://cdn.webrad.io/images/logos/radio-org-ng/classic-fm-97-3.png" alt="CLASSIC - 97.3FM"></a></div>
+        <div class="radio"><a href="#"><img onclick="radioElement(this)" title="4" id="smoothfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/smooth.png" alt="SMOOTH- 98.1FM"></a></div>
+        <div class="radio"><a href="#"><img title="5" onclick="radioElement(this)" id="rhythmfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/rhythm.png" alt="RHYTHM- 93.7FM"></a></div>
+        <div class="radio"><a href="#"><img title="6" onclick="radioElement(this)" id="contemporarygospelfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/gospel.png" alt="CONTEMPRARY GOSPEL- 92.3FM"></a></div>
+        <div class="radio"><a href="#"><img title="7" onclick="radioElement(this)" id="classicfm" src="https://cdn.webrad.io/images/logos/radio-org-ng/classic-fm-97-3.png" alt="CLASSIC - 97.3FM"></a></div>
     </section>
 
     <footer>
@@ -67,6 +67,6 @@
         </div>
     </footer>
 
-    <script src="/app.js"></script>
+    <script src="/app2.js"></script>
 </body> 
 </html>
